@@ -3,15 +3,13 @@ const fs = require('fs');
 const w3Colors = require('./lib/colors');
 const generateSVG = require('./lib/shapes');
 
+//Validates the color name or hex code that the user inputs
 function validateColor(input){
     const lowerCaseInput = input.toLowerCase();
-    console.log('Lower Case Input: ', lowerCaseInput);
 
     const isValidColorName = w3Colors[lowerCaseInput];
-    console.log('Is Valid Color name: ', isValidColorName);
 
     const isValidHexCode = /^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$/.test(lowerCaseInput);
-    console.log('Is valid hex code:', isValidHexCode);
 
     return isValidColorName || isValidHexCode;
 }
@@ -74,10 +72,8 @@ function startApp() {
       const fileName = `examples/${userInput.initials}_logo.svg`;
       fs.writeFileSync(fileName, svgCode);
   
-      // Print success message
       console.log(`Generated ${fileName}`);
     });
   }
   
-  // Start the application
   startApp();

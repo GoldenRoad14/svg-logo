@@ -1,1 +1,1 @@
-<svg width="300" height="200" xmlns="http://www.w3.org/2000/svg"><rect x="100" y="50" width="100" height="100" fill="gold" /><text x="150" y="120" font-size="50" fill="green" text-anchor="middle" font-family="Brush Script MT, cursive">HEY</text></svg>
+<svg width="300" height="200" xmlns="http://www.w3.org/2000/svg"><polygon points="150,50 100,150 200,150" fill="#555555" /><text x="150" y="120" font-size="50" fill="Blue" text-anchor="middle" font-family="Times New Roman, Times, serif">HEY</text></svg>
